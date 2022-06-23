@@ -1,3 +1,4 @@
+# Stock Section of Template to README
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome USER_NAME,
@@ -106,3 +107,364 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+# Idea
+A travel ecommerce website
+
+# Business Case / SWOT Analysis / Business Justification
+## Factors which may increase demand
+As pandemic lockdown measures ease in many countries, tourism may benefit from increased demand compared to recent years. 
+
+## Factors which may decrease demand
+However, there are challenges including inflation, and energy prices.  
+
+# Solution
+Therefore, it is expected customers planning a vacation would like to find the cheapest flights.  
+
+## Specification / Purpose of site
+### Search
+Since there are many sites which offer flights, it is the goal of this project to create an ecommerce platform that allows customers to browse for flights across multiple sites and buy the cheapest flights.
+
+## Potential features / Issues to be ironed out
+### Payment
+- Ability to pay for flights through the site.
+- Ability to leave site and go to the Third Party site supplying flights.
+    - (Google model: click through and leave site.)
+- Ability to set up a pipeline to use the payment facility on the third party site.
+
+## Features / issues to be ironed out other than payment
+- Set up single API Call to one site
+- Build up to a second and then Muliple API calls
+- Build the Django App
+
+## Easier issues
+- Set up a donation option
+
+## Other issues
+- Decide whether to enable advertising
+
+## Project steps / parts
+### Documentation [in progress]
+#### References
+### Incorporate GitHub Copilot Visual Studio Code Extension
+#### Reasoning
+Maximise available help to solve the problem of building a creative Django ecommerce web application.
+#### Method 
+Navigate to site
+Apply to get accepted for early testing
+Once approved follow necessary steps to ensure correct extension(s) are installed  in VS Code.
+#### Other tools to use
+- Tabnine Visual Studio Code Extension
+- Vim Visual Studio Code Extension
+#### Reasoning
+May increase speed of development
+### Online Tutorials
+
+### Look at other platforms
+
+#### e-commerce platforms
+Amazon
+Shopify
+
+#### flights platforms
+Skyscanner
+
+#### Travel Brokers / Aggregators
+travelopro
+Booking.com
+
+### Nice to have
+
+#### Local
+Local News
+Local Weather
+Local Hotels
+Local Car hire
+Local factors, which may influence the trip.
+Local restaurants
+Local events
+Local attractions
+Local ammeneties
+Tourist information points
+Language help
+- Google Translate API
+    - [Translation](https://cloud.google.com/translate)
+Tie into Google Maps
+Tie into Apple Maps
+Implement multiple searches on multiple search engines
+
+#### Airport
+Car rental
+Duty free shopping
+Airport Security Information
+#### Covid Information
+##### Testing
+Requirements
+    by country
+    by region
+Operators
+    Location
+    Cost
+    Time to Results
+    
+#### In Flight
+Snacks
+## Other technologies / Visual Studio Code Extensions
+### GitLens
+May if want to implement referenced code from other GitHub repositories 
+### User experience / User Interface (UX/UI)
+Images
+
+#### Nice to have
+##### Video
+- Live Video
+
+
+## Issues / Challenges
+Gitpod does not currently support GitHub Copilot
+## Pivot Tech Stack / Workflow
+Use Local Visual Studio Code instead of Visual Studio Code in Gitpod
+## Using Windows
+## Need to install Linux
+### Options installed
+- Gitbash (Default)
+    - TODO: Change default
+    - TODO: commit message and finish installation in CLI
+- Windows Subsystem for Linux (WSL)
+    - Check if WSL2
+- Ubuntu 20.04.4 LTS (Long Term Support)
+
+
+## Command Line Interface (CLI)
+Need to install python3 to provide pip3 usage
+## Django
+Necessary to install Django using pip3
+# Process of installation
+## code to install pip3 capability
+```
+sudo apt install python3-pip
+```
+
+## Issue
+- Using Gitbash (Default) CLI in VS Code:
+```bash: sudo: command not found```
+## Solution
+Click dropdown on right of CLI, beside plus symbol "+" to pivot "Launch Profile" to Ubuntu-20.04 (WSL)
+
+## Retry Installation
+Check if python3 already installed:
+``` which python3 ```
+### python3 found at:
+/usr/bin/python3
+
+### If python3 not found run installation command:
+```sudo apt install python3-pip```
+
+## Use pip3 to install django:
+
+```
+pip3 install django
+```
+## Error
+Command 'pip3' not found, but can be installed with:
+
+sudo apt install python3-pip
+## Solution
+run:
+```sudo apt install python3-pip```
+Successfully installed pip3
+```which pip3```
+/usr/bin/pip3
+
+### Aside:
+TODO: Check if all API's work with Python or JavaScript
+
+## Install Django [Paused]
+```
+pip3 install django
+```
+Aside:
+## Plan
+TODO: Schedule project checkpoints
+
+## Sub ideas
+- Add value to the consumer experience by adding a GUI graphic which shows the route on a map with departure and arrival dates, times and airports.
+### Nice to have
+- Would it be feasible / beneficial / possible to use or incorporate blockchain technologies?
+
+## Install Django [Resumed]
+```
+pip3 install django
+```
+### Error
+```  WARNING: The script sqlformat is installed in '/home/stephen/.local/bin' which is not on PATH.```
+
+### Solution
+- [package management - Ubuntu](https://askubuntu.com/questions/1242234/in-ubuntu-20-04-how-to-fix-pip-path)
+- ``` On Ubuntu 20.04 simply log out of your account and log back in to fix that warning. This will re-evaluate your ~/.profile, ...```
+
+tried code:
+``` logout ```
+in CLI,
+which worked.
+
+### Terminal...
+### Ubuntu-20.04 (WSL)
+``` which django ```
+does not return anything
+### Search
+pip3 django version command
+#### Found
+```python -m django --version```
+#### Result
+4.0.5
+##### Reference
+- [How to check Django version](https://stackoverflow.com/questions/6468397/how-to-check-django-version)
+
+## Reference
+- E 003 Django E commerce Gitpod Project Setup
+### Start Project
+#### Generic
+django-admin startproject my_project
+#### Specific
+django-admin startproject flight_aggregator
+#### Result
+This sets up an outer and inner folder named flight_aggregator
+Inside the outer folder is also manage.py
+Inside the inner folder are the following files:
+    - __init__.py
+    - asgi.py
+    - settings.py
+    - urls.py
+    - wsgi.py
+
+##### Aside Question
+- Is it possible to use GitHub Copilot in the CLI?
+
+## Reference
+- [Django Documentation](https://docs.djangoproject.com/en/dev/)
+### Content
+Note: This content will be about explaining the Django framework.
+Specifically, those folders and files generated by the command:
+```django-admin startproject flight_aggregator```
+and listed above.
+
+
+# Taking stock of work to date and Next Steps
+- All auth
+# holder
+## Work Complete
+### Prep
+Switch to Ubuntu-20.04 (WSL)
+#### virtual environment
+pip install virtualenv
+virtualenv flightvirtualenv
+source flightvirtualenv/bin/activate
+virtualenv --version
+#### Create script file to run CLI commands automatically
+touch scriptToRunCliCmdsAuto.sh
+vi scriptToRunCliCmdsAuto.sh
+i
+/usr/bin/sh
+```
+<esc>
+:x<Return>
+```
+chmod +x scriptToRunCliCmdsAuto.sh
+### CLI
+pip3 install django
+django-admin startproject flight_aggregator
+### .gitignore
+*.sqlite3
+*.pyc
+__pycache__
+# Aside:
+_______________________________________________________________________
+Error loading webview: Error: Could not register service workers: InvalidStateError: Failed to register a ServiceWorker: The document is in an invalid state..
+# CLI (wsl)
+rm -rf ~/.config/Code/Cache
+`taskkill /f /im code.exe`
+# output
+taskkill: command not found
+kill -9 pid_of_process
+- Conclusion: no ServiceWorker found in Task Manager, so ignore warning
+_______________________________________________________________________
+# modify command to run from virtual environment in WSL in VSCode
+## DONT' USE: original command WAS:
+python3 manage.py runserver
+## USE: Remember to activate virtual environment each session in WSL
+source flightvirtualenv/bin/activate
+## USE: modified command IS:
+python3 flight_aggregator/manage.py runserver
+# Error in Terminal:
+```
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+```
+# In Left Side Panel: Go to: Remote Explorer
+(This only works in Gitpod, not on VSCode on Local Machine)
+# So, hit "Go Live" in bottom right
+Not working
+# Search why
+# Fix
+netstat -tnlp | grep {{PORT}} 
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+netstat -tnlp | grep {{PORT}} 
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+```netstat -taepn 2>/dev/null | grep -Po "\b(\d|\.)+:1521\b" 1>/dev/null```
+
+### Reference
+E 003 Django E commerce Gitpod Project Setup
+### CLI
+python3 manage.py runserver
+
+
+
+# Backstory
+This is an update to the backstory:
+Since beginning this project it has become apparent that the travel industry is under pressure, due to elevated energy prices, resulting in elevated ticket prices, as well as impacts on flight schedules.  Even though this probably means there will be less flights, this project may be more useful, hopefully, when overheads decrease in future, and demand the market expands.
+
+# References
+## virtual environment
+ - [virtual environment](docs.python-guide.org)
+ - py -m venv env | .\env\Scripts\activate | source env/bin/activate [virtual environment](https://www.google.com/search?q=virtual+environment&oq=virtual+env&aqs=chrome.0.0i512j69i57j0i512j0i10i512j0i512j69i65l3.1969j0j7&sourceid=chrome&ie=UTF-8)
+
+ ## create a script file to run CLI commands automatically
+ - [how to create a file to run cli commands in vscode](https://www.google.com/search?q=how+to+create+a+file+to+run+cli+commands+in+vscode&oq=how+to+create+a+file+to+run+cli+commands+in+vscode&aqs=chrome..69i57j69i64.7908j0j7&sourceid=chrome&ie=UTF-8)
+ - [how to create a file that will run a series of commands automatically in the cli](https://www.google.com/search?q=how+to+create+a+file+that+will+run+a+series+of+commands+automatically+in+the+cli&oq=how+to+create+a+file+that+will+run+a+series+of+commands+automatically+in+the+cli&aqs=chrome..69i57j69i64.19610j1j7&sourceid=chrome&ie=UTF-8)
+ - [create a script file to run CLI commands automatically](https://askubuntu.com/questions/223691/how-do-i-create-a-script-file-for-terminal-commands)
+_
+## editing files
+- vi /path/to/file [open a file to edit it cli](https://www.google.com/search?q=open+a+file+to+edit+it+cli&oq=open+a+file+to+edit+it+cli&aqs=chrome..69i57j33i160l3j33i22i29i30l6.3913j0j7&sourceid=chrome&ie=UTF-8)
+- [vi cmds](https://www.google.com/search?q=vi+cmds&oq=vi+cmds&aqs=chrome..69i57j0i10l9.3140j0j7&sourceid=chrome&ie=UTF-8)
+
+### save and exit vi editor
+- [:x<Return>	quit vi, writing out modified file to file named in original invocation](https://www.cs.colostate.edu/helpdocs/vi.html)
+
+### Debug vi editing
+- [use vi to modify exe files taking long time](https://www.google.com/search?q=use+vi+to+modify+exe+files+taking+long+time&oq=use+vi+to+modify+exe+files+taking+lon&aqs=chrome.1.69i57j33i10i160j33i21l2.10684j0j7&sourceid=chrome&ie=UTF-8)
+## file extensions
+- [extension for executable file in cli](https://www.google.com/search?q=extension+for+executable+file+in+cli&oq=extension+for+executable+file+in+cli&aqs=chrome..69i57j33i160l2j33i15i22i29i30j33i22i29i30l5j33i15i22i29i30.8350j0j7&sourceid=chrome&ie=UTF-8)
+- [BAT	Batch File	Windows, EX_	Compressed Executable	Windows](https://www.lifewire.com/list-of-executable-file-extensions-2626061)
+## debugging process progressing from bash to shell
+- [/bin/bash ^ SyntaxError: invalid syntax](https://www.google.com/search?q=%2Fbin%2Fbash+%5E+SyntaxError%3A+invalid+syntax&oq=%2Fbin%2Fbash+%5E+SyntaxError%3A+invalid+syntax&aqs=chrome..69i57j69i58.4971j0j7&sourceid=chrome&ie=UTF-8)
+- [Basic bash script returns "invalid syntax"](https://stackoverflow.com/questions/29858945/basic-bash-script-returns-invalid-syntax)
+## modify to execute with WSL shell
+- [how to run scripts with wsl](https://www.google.com/search?q=how+to+run+scripts+with+wsl&oq=how+to+run+scripts+with+wsl&aqs=chrome..69i57j0i22i30l4j0i390l2j69i64.6085j0j7&sourceid=chrome&ie=UTF-8)
+- [2 Execute Shell Script using Ubuntu on Windows 11/10](https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10)
+
+ ## Extra References
+ - Ctrl+Shift+L [how to select all instances in vscode](https://www.google.com/search?q=how+to+select+all+instances+in+vscode&oq=how+to+select+all+instances+in+vscode&aqs=chrome..69i57j0i22i30j0i390l3j69i64.6324j0j7&sourceid=chrome&ie=UTF-8)
+### Error loading webview
+ - [Error loading webview: Error: Could not register service workers: InvalidStateError: Failed to register a ServiceWorker: The document is in an invalid state..](https://www.google.com/search?q=Error+loading+webview%3A+Error%3A+Could+not+register+service+workers%3A+InvalidStateError%3A+Failed+to+register+a+ServiceWorker%3A+The+document+is+in+an+invalid+state..&oq=Error+loading+webview%3A+Error%3A+Could+not+register+service+workers%3A+InvalidStateError%3A+Failed+to+register+a+ServiceWorker%3A+The+document+is+in+an+invalid+state..&aqs=chrome..69i57.781j0j7&sourceid=chrome&ie=UTF-8)
+- [taskkill: command not found](https://www.google.com/search?q=taskkill%3A+command+not+found&oq=taskkill%3A+command+not+found&aqs=chrome..69i57j69i58.343j0j7&sourceid=chrome&ie=UTF-8)
+- kill -9 pid_of_process | or | killall -KILL myStupidProcess [Linux equivalent of taskkill - Stack Overflow](https://stackoverflow.com/questions/37114609/linux-equivalent-of-taskkill)
+
+## Github Copilot ( (re) activation / authentication)
+- [Your AI pair programmer](https://github.com/features/copilot/)
+- [Seeing your first suggestion](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-visual-studio-code)
+
+# Debugging server not found
+-[list ports](https://stackoverflow.com/questions/61251190/how-to-list-currently-running-servers-that-are-listening-to-localhost-ports-in-v)
